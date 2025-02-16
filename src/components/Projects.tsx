@@ -3,24 +3,38 @@ import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
 const projects = [
-  {
-    title: "Sistema de Microserviços",
-    description: "Arquitetura distribuída com Node.js e Docker",
-    tech: ["Node.js", "Docker", "RabbitMQ", "MongoDB"],
-    details: "Sistema escalável processando milhões de requisições por dia"
-  },
-  {
-    title: "API REST de E-commerce",
-    description: "Backend completo para plataforma de e-commerce",
-    tech: ["Python", "Django", "PostgreSQL", "Redis"],
-    details: "Integração com gateway de pagamento e sistema de recomendação"
-  },
-  {
-    title: "Pipeline de ETL",
-    description: "Processamento de dados em tempo real",
-    tech: ["Apache Kafka", "Python", "AWS", "Elasticsearch"],
-    details: "Processamento de 1TB de dados diários com latência < 100ms"
-  }
+    {
+      title: "Sistema de Monitoramento de Plantas Inteligente",
+      description: "Backend para um sistema IoT de jardinagem automatizada",
+      tech: ["Python","C++", "FastAPI", "SQL", "ESP32"],
+      details: "Coleta dados de sensores de umidade, temperatura e luminosidade, controlando automaticamente a irrigação com base nas condições ambientais. Comunicação entre ESP32 e o backend via MQTT."
+    },
+    {
+      title: "API de QR Code para Doação",
+      description: "Sistema para gerar QR Codes personalizados para doações",
+      tech: ["Python", "Flask", "Pillow"],
+      details: "Gera QR Codes para facilitar transações financeiras em projetos sociais. Permite parametrização de valores e destinatários, garantindo segurança e usabilidade."
+    },
+    {
+      title: "Sistema Backend para Dispositivo Vestível Assistivo",
+      description: "Backend para um wearable de auxílio a surdos",
+      tech: ["C++","ESP32"],
+      details: "Processa sinais de som detectados, identifica alertas e envia notificações vibratórias personalizadas ao dispositivo."
+    },
+    {
+      title: "Jogo Educacional Gênios com Arduino",
+      description: "Desenvolvimento de um sistema embarcado baseado no clássico jogo Genius, utilizando Arduino para estimular o aprendizado e a lógica dos jogadores.",
+      tech: ["C++", "Arduino", "ESP32", "LEDs RGB", "Buzzer"],
+      details: "Gera sequências aleatórias de cores e sons, registrando a interação do jogador para validação e aumento progressivo da dificuldade."
+    },
+    {
+      title: "Bot de Discord Personalizado para Comunidade",
+      description: "Desenvolvimento de bot para automação e segurança em servidores Discord",
+      tech: ["Python", "discord.py", "MySQL"],
+      details: "Bot para moderação e notificações, incluindo sistema de banimento global, alertas sobre usuários reincidentes e comandos personalizados para administração."
+    }
+  
+  
 ];
 
 const Projects = () => {
