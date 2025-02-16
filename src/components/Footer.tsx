@@ -1,23 +1,29 @@
-
-import { Github, Instagram, MessageSquare } from "lucide-react";
+import { motion } from "framer-motion";
+import { FaGithub, FaInstagram, FaDiscord, FaEnvelope } from "react-icons/fa";
 
 const socialLinks = [
   {
-    icon: Github,
+    icon: FaGithub,
     href: "https://github.com/seu-usuario",
     label: "GitHub",
   },
   {
-    icon: Instagram,
+    icon: FaInstagram,
     href: "https://instagram.com/seu-usuario",
     label: "Instagram",
   },
   {
-    icon: MessageSquare,
+    icon: FaDiscord,
     href: "https://discord.gg/seu-servidor",
     label: "Discord",
   },
+  {
+    icon: FaEnvelope,
+    href: "mailto:seu-email@exemplo.com",
+    label: "Email",
+  },
 ];
+
 
 const Footer = () => {
   return (
@@ -42,7 +48,7 @@ const Footer = () => {
             })}
           </div>
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Seu Nome. Todos os direitos reservados.
+            © {new Date().getFullYear()} Claudeilson Souza. Todos os direitos reservados.
           </p>
         </div>
       </div>

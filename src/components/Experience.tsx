@@ -3,36 +3,41 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    period: "2021 - Presente",
-    role: "Desenvolvedor Backend Sênior",
-    company: "Tech Solutions Inc.",
-    description: "Liderança técnica em projetos de microserviços e APIs de alta performance"
+    period: "2024 - Presente",
+    role: "Freelance",
+    company: "Projetos Independentes",
+    description: "Desenvolvimento de soluções personalizadas, incluindo bots para gerenciamento de comunidades e automação de processos."
   },
   {
-    period: "2019 - 2021",
-    role: "Desenvolvedor Backend Pleno",
-    company: "DataTech Systems",
-    description: "Desenvolvimento de sistemas distribuídos e pipelines de processamento de dados"
+    period: "2024 - Presente",
+    role: "Desenvolvedor de Aplicativos Educacionais",
+    company: "Projeto Independente",
+    description: "Pesquisa e desenvolvimento de um aplicativo gamificado para conscientização ambiental e impactos da mineração na Chapada Diamantina."
   },
   {
-    period: "2017 - 2019",
-    role: "Desenvolvedor Backend Júnior",
-    company: "Startup Innovation",
-    description: "Implementação de APIs REST e integrações com serviços de terceiros"
+    period: "2022 - 2024",
+    role: "Líder do Clube de Robótica",
+    company: "The Armengers - IFBA",
+    description: "Coordenação de projetos educacionais em robótica, desenvolvimento de dispositivos assistivos para surdos, participação e premiação na Mostra Nacional de Robótica."
+  },
+  {
+    period: "2022 - 2024",
+    role: "Pesquisador e Desenvolvedor em IoT e Sustentabilidade",
+    company: "IFBA - Campus Seabra",
+    description: "Desenvolvimento de projetos científicos envolvendo IoT para automação e sustentabilidade, incluindo um jardim inteligente controlado por IA e sensores ambientais."
   }
 ];
+
+
 
 const Experience = () => {
   return (
     <section id="experience" className="py-16 bg-background">
       <div className="container px-4 mx-auto">
         <div className="text-center mb-12">
-          <span className="inline-block px-3 py-1 text-sm font-medium text-primary bg-primary/10 rounded-full mb-4">
-            Experiência
-          </span>
           <h2 className="text-3xl font-bold mb-4">Trajetória Profissional</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Minha jornada como desenvolvedor backend e as empresas onde contribuí
+            Minha jornada como desenvolvedor Fullstack
           </p>
         </div>
         <div className="max-w-3xl mx-auto">
