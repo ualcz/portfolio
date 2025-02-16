@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { Github, Instagram, Discord } from "lucide-react";
+import { Github, Instagram, MessageSquare } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -8,6 +8,16 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { 
+  Server, 
+  Binary, 
+  Coffee, 
+  Database, 
+  Container, 
+  Cloud, 
+  Git, 
+  Network 
+} from "lucide-react";
 
 const socialLinks = [
   {
@@ -21,21 +31,21 @@ const socialLinks = [
     label: "Instagram",
   },
   {
-    icon: Discord,
+    icon: MessageSquare,
     href: "https://discord.gg/seu-servidor",
     label: "Discord",
   },
 ];
 
 const technologies = [
-  { name: "Node.js", icon: "Server" },
-  { name: "Python", icon: "Binary" },
-  { name: "Java", icon: "Coffee" },
-  { name: "MongoDB", icon: "Database" },
-  { name: "Docker", icon: "Container" },
-  { name: "AWS", icon: "Cloud" },
-  { name: "Git", icon: "Git" },
-  { name: "API REST", icon: "Network" },
+  { name: "Node.js", icon: Server },
+  { name: "Python", icon: Binary },
+  { name: "Java", icon: Coffee },
+  { name: "MongoDB", icon: Database },
+  { name: "Docker", icon: Container },
+  { name: "AWS", icon: Cloud },
+  { name: "Git", icon: Git },
+  { name: "API REST", icon: Network },
 ];
 
 const Hero = () => {
@@ -103,10 +113,7 @@ const Hero = () => {
                         className="flex flex-col items-center gap-2"
                       >
                         <div className="p-4 bg-accent/10 rounded-full">
-                          <Icon
-                            name={tech.icon}
-                            className="w-6 h-6 text-primary"
-                          />
+                          <tech.icon className="w-6 h-6 text-primary" />
                         </div>
                         <span className="text-sm font-medium">{tech.name}</span>
                       </motion.div>
