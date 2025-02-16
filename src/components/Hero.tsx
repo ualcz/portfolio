@@ -1,9 +1,51 @@
 
 import { motion } from "framer-motion";
+import { Github, Instagram, MessageSquare } from "lucide-react";
+
+const socialLinks = [
+  {
+    icon: Github,
+    href: "https://github.com/seu-usuario",
+    label: "GitHub",
+  },
+  {
+    icon: Instagram,
+    href: "https://instagram.com/seu-usuario",
+    label: "Instagram",
+  },
+  {
+    icon: MessageSquare,
+    href: "https://discord.gg/seu-servidor",
+    label: "Discord",
+  },
+];
 
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-accent/5">
+      {/* Social Links Bar */}
+      <div className="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-sm z-50">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex justify-end gap-6">
+            {socialLinks.map((link) => {
+              const Icon = link.icon;
+              return (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label={link.label}
+                >
+                  <Icon className="w-5 h-5" />
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
       <div className="container px-4 py-16 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
