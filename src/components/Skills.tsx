@@ -1,15 +1,16 @@
 
 import { motion } from "framer-motion";
+import { Server, Database, Container, Cloud, Git, Code } from "lucide-react";
 
 const skills = [
-  { name: "Node.js", level: 90 },
-  { name: "Python", level: 85 },
-  { name: "Java", level: 80 },
-  { name: "SQL", level: 95 },
-  { name: "MongoDB", level: 85 },
-  { name: "Docker", level: 80 },
-  { name: "AWS", level: 75 },
-  { name: "CI/CD", level: 85 },
+  { name: "Node.js", level: 90, icon: Server },
+  { name: "Python", level: 85, icon: Code },
+  { name: "Java", level: 80, icon: Code },
+  { name: "SQL", level: 95, icon: Database },
+  { name: "MongoDB", level: 85, icon: Database },
+  { name: "Docker", level: 80, icon: Container },
+  { name: "AWS", level: 75, icon: Cloud },
+  { name: "CI/CD", level: 85, icon: Git },
 ];
 
 const Skills = () => {
@@ -35,8 +36,11 @@ const Skills = () => {
               transition={{ delay: index * 0.1 }}
               className="bg-card p-6 rounded-lg shadow-sm"
             >
-              <div className="flex justify-between mb-2">
-                <span className="font-medium">{skill.name}</span>
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center gap-3">
+                  <skill.icon className="w-5 h-5 text-primary" />
+                  <span className="font-medium">{skill.name}</span>
+                </div>
                 <span className="text-muted-foreground">{skill.level}%</span>
               </div>
               <div className="h-2 bg-accent rounded-full overflow-hidden">
