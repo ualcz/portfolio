@@ -53,6 +53,35 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
+          <div className="flex flex-col items-center mb-8">
+            <motion.div
+              initial={{ scale: 0.5, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="w-40 h-40 rounded-full overflow-hidden mb-6 border-4 border-primary/10"
+            >
+              <img
+                src="/photo-1581091226825-a6a2a5aee158"
+                alt="Profile"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="max-w-2xl text-center"
+            >
+              <h2 className="text-2xl font-semibold mb-4">Seu Nome</h2>
+              <p className="text-muted-foreground mb-6">
+                Com mais de 5 anos de experiência em desenvolvimento backend, 
+                especializado em arquitetar soluções escaláveis e de alta performance. 
+                Proficiente em Node.js, Python e tecnologias cloud, com forte 
+                experiência em microsserviços e sistemas distribuídos.
+              </p>
+            </motion.div>
+          </div>
+
           <span className="inline-block px-3 py-1 text-sm font-medium text-primary bg-primary/10 rounded-full mb-4">
             Desenvolvedor Backend
           </span>
