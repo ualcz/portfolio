@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { FaPython, FaCuttlefish, FaDatabase, FaMicrochip, FaCodeBranch, FaDiscord } from "react-icons/fa";
+import { FaPython, FaCuttlefish, FaDatabase, FaMicrochip, FaCodeBranch, FaDiscord, FaRocket, FaGithub } from "react-icons/fa";
 import { SiFastapi, SiCplusplus, SiArduino, SiMysql, SiFlask } from "react-icons/si";
 
 const projects = [
@@ -10,28 +10,32 @@ const projects = [
     description: "Backend para um sistema IoT de jardinagem automatizada",
     tech: [FaPython, SiCplusplus, SiFastapi, FaDatabase, FaMicrochip],
     details: "Coleta dados de sensores de umidade, temperatura e luminosidade, controlando automaticamente a irrigação com base nas condições ambientais. Comunicação entre ESP32 e o backend via MQTT.",
-    link: "#"
+    link: "#",
+    github: "#"
   },
   {
     title: "API de QR Code para Doação",
     description: "Sistema para gerar QR Codes personalizados para doações",
     tech: [FaPython, SiFlask],
     details: "Gera QR Codes para facilitar transações financeiras em projetos sociais. Permite parametrização de valores e destinatários, garantindo segurança e usabilidade.",
-    link: "#"
+    link: "https://loveqr.vercel.app/",
+    github: "#"
   },
   {
-    title: "Jogo Educacional Gênios com Arduino",
-    description: "Desenvolvimento de um sistema embarcado baseado no clássico jogo Genius, utilizando Arduino para estimular o aprendizado e a lógica dos jogadores.",
+    title: "Gênios com Arduino",
+    description: "sistema embarcado baseado no clássico jogo Genius.",
     tech: [FaCuttlefish, SiArduino, FaMicrochip, FaCodeBranch],
     details: "Gera sequências aleatórias de cores e sons, registrando a interação do jogador para validação e aumento progressivo da dificuldade.",
-    link: "https://github.com/ualcz/Memoria_Arduino"
+    link: "#",
+    github: "https://github.com/ualcz/Memoria_Arduino"
   },
   {
     title: "Bot de Discord Personalizado para Comunidade",
     description: "Desenvolvimento de bot para automação e segurança em servidores Discord",
     tech: [FaPython, FaDiscord, SiMysql],
     details: "Bot para moderação e notificações, incluindo sistema de banimento global, alertas sobre usuários reincidentes e comandos personalizados para administração.",
-    link: "#"
+    link: "#",
+    github: "#"
   }
 ];
 
@@ -67,7 +71,24 @@ const Projects = () => {
                       </span>
                     ))}
                   </div>
-                  <a href={project.link} className="text-primary underline text-sm">Ver mais</a>
+                  <div className="flex gap-4">
+                    <a 
+                      href={project.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className={`inline-flex items-center gap-2 px-4 py-2 text-white rounded-lg transition ${project.link !== "#" ? "bg-primary hover:bg-primary-dark" : "bg-gray-400 cursor-not-allowed"}`}
+                    >
+                      <FaRocket /> Deploy
+                    </a>
+                    <a 
+                      href={project.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className={`inline-flex items-center gap-2 px-4 py-2 text-white rounded-lg transition ${project.github !== "#" ? "bg-gray-800 hover:bg-gray-900" : "bg-gray-400 cursor-not-allowed"}`}
+                    >
+                      <FaGithub /> GitHub
+                    </a>
+                  </div>
                 </CardContent>
               </Card>
             </motion.div>

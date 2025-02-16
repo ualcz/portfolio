@@ -80,10 +80,9 @@ const Hero = () => {
             >
               <h2 className="text-2xl font-semibold mb-4">Seu Nome</h2>
               <p className="text-muted-foreground mb-6">
-                Com mais de 5 anos de experiência em desenvolvimento backend, 
-                especializado em arquitetar soluções escaláveis e de alta performance. 
-                Proficiente em Node.js, Python e tecnologias cloud, com forte 
-                experiência em microsserviços e sistemas distribuídos.
+              Desenvolvedor Full Stack e Técnico em TI com experiência em IoT, automação e desenvolvimento backend. 
+              Especializado na criação de soluções inovadoras, como bots inteligentes, sistemas embarcados e aplicações web escaláveis
+              aliando funcionalidade a um design minimalista e atraente para o usuário.
               </p>
             </motion.div>
           </div>
