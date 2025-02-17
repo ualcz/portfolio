@@ -18,7 +18,7 @@ const projects = [
     description: "Sistema para gerar QR Codes personalizados para doações",
     tech: [FaPython, SiFlask],
     details: "Gera QR Codes para facilitar transações financeiras em projetos sociais. Permite parametrização de valores e destinatários, garantindo segurança e usabilidade.",
-    link: "https://loveqr.vercel.app/",
+    link: "https://looveqr.vercel.app/",
     github: "#"
   },
   {
