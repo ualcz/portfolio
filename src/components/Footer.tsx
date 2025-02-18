@@ -9,7 +9,7 @@ const socialLinks = [
   },
   {
     icon: FaInstagram,
-    href: "https://www.instagram.com/",
+    href: "https://www.instagram.com/claubx_",
     label: "Instagram",
   },
   {
