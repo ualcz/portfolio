@@ -5,22 +5,22 @@ import { FaGithub, FaInstagram, FaDiscord, FaEnvelope } from "react-icons/fa";
 const socialLinks = [
   {
     icon: FaGithub,
-    href: "https://github.com/seu-usuario",
+    href: "https://github.com/ualcz",
     label: "GitHub",
   },
   {
     icon: FaInstagram,
-    href: "https://instagram.com/seu-usuario",
+    href: "https://www.instagram.com/",
     label: "Instagram",
   },
   {
     icon: FaDiscord,
-    href: "https://discord.gg/seu-servidor",
+    href: "https://discord.com/users/949800493402718279",
     label: "Discord",
   },
   {
     icon: FaEnvelope,
-    href: "mailto:seu-email@exemplo.com",
+    href: "mailto:claudeilsonsouzza@gmail.com",
     label: "Email",
   },
 ];
