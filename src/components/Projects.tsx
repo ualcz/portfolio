@@ -31,11 +31,11 @@ const projects = [
   },
   {
     title: "Bot de Discord Personalizado para Comunidade",
-    description: "Desenvolvimento de bot para automação e segurança em servidores Discord",
-    tech: [FaPython, FaDiscord, SiMysql],
-    details: "Bot para moderação e notificações, incluindo sistema de banimento global, alertas sobre usuários reincidentes e comandos personalizados para administração.",
+    description: "Desenvolvimento de bot para automação para gera calls personalizada",
+    tech: [FaPython, FaDiscord],
+    details: "Bot do Discord que permite aos administradores gerenciar canais de voz personalizados dentro de um servidor. Os administradores podem adicionar, listar e remover canais de voz personalizados de maneira fácil e intuitiva.",
     link: "#",
-    github: "#"
+    github: "https://github.com/ualcz/Voice_bot"
   }
 ];
 
