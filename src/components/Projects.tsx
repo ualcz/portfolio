@@ -17,9 +17,9 @@ const projects = [
     title: "API de QR Code para Doação",
     description: "Sistema para gerar QR Codes personalizados para doações",
     tech: [FaPython, SiFlask],
-    details: "Gera QR Codes para facilitar transações financeiras em projetos sociais. Permite parametrização de valores e destinatários, garantindo segurança e usabilidade.",
+    details: "Gera QR Codes para para facilitar e fornecer uma maneira simples e flexível de criar QR Codes personalizados para decoração.",
     link: "https://looveqr.vercel.app/",
-    github: "#"
+    github: "https://github.com/ualcz/lovecode"
   },
   {
     title: "Gênios com Arduino",
