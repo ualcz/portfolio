@@ -5,14 +5,7 @@ import { FaPython, FaCuttlefish, FaDatabase, FaMicrochip, FaCodeBranch, FaDiscor
 import { SiFastapi, SiCplusplus, SiArduino, SiMysql, SiFlask } from "react-icons/si";
 
 const projects = [
-  {
-    title: "Sistema de Monitoramento de Plantas Inteligente",
-    description: "Backend para um sistema IoT de jardinagem automatizada",
-    tech: [FaPython, SiCplusplus, SiFastapi, FaDatabase, FaMicrochip],
-    details: "Coleta dados de sensores de umidade, temperatura e luminosidade, controlando automaticamente a irrigação com base nas condições ambientais. Comunicação entre ESP32 e o backend via MQTT.",
-    link: "#",
-    github: "#"
-  },
+ 
   {
     title: "API de QR Code para Doação",
     description: "Sistema para gerar QR Codes personalizados para doações",
