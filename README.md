@@ -17,7 +17,6 @@ Este portfólio foi desenvolvido utilizando as seguintes tecnologias:
 
 - **Navegação**: O site possui links de navegação para seções como "Home", "Skills", "Projetos" e "Experiência".
 - **Responsividade**: O layout é completamente responsivo, adaptando-se a diferentes tamanhos de tela.
-- **Scroll para o Topo**: A página rola automaticamente para o topo sempre que o usuário muda de página.
 - **Social Links**: Links interativos para as minhas redes sociais (GitHub, Instagram, Discord, etc.).
 
 ## Como Rodar o Projeto Localmente
