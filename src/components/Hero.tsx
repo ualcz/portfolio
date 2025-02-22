@@ -1,7 +1,6 @@
 
 import { motion } from "framer-motion";
 import { FaGithub, FaInstagram, FaDiscord, FaEnvelope } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const socialLinks = [
   {
@@ -26,56 +25,34 @@ const socialLinks = [
   },
 ];
 
-const navLinks = [
-  { label: "Home", path: "/" },
-  { label: "Projetos", path: "/projects" },
-  { label: "Skills", path: "/skills" },
-  { label: "Experiência", path: "/experience" },
-];
 
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-accent/5">
-      {/* Header with Navigation and Social Links */}
-      <div className="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-sm z-50 border-b border-border/40">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center h-16">
-            {/* Navigation Links */}
-            <nav className="flex gap-6">
-              {navLinks.map((link) => (
-                <Link
+      {/* Social Links Bar */}
+      <div className="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-sm z-50">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex justify-end gap-6">
+            {socialLinks.map((link) => {
+              const Icon = link.icon;
+              return (
+                <a
                   key={link.label}
-                  to={link.path}
-                  className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label={link.label}
                 >
-                  {link.label}
-                </Link>
-              ))}
-            </nav>
-
-            {/* Social Links */}
-            <div className="flex gap-6">
-              {socialLinks.map((link) => {
-                const Icon = link.icon;
-                return (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                    aria-label={link.label}
-                  >
-                    <Icon className="w-5 h-5" />
-                  </a>
-                );
-              })}
-            </div>
+                  <Icon className="w-5 h-5" />
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>
 
-      <div className="container px-4 py-16 mx-auto mt-16">
+      <div className="container px-4 py-16 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -101,21 +78,21 @@ const Hero = () => {
               transition={{ delay: 0.3 }}
               className="max-w-2xl text-center"
             >
-              <h2 className="text-2xl font-semibold mb-4">Claudeilson Souza</h2>
+              <h2 className="text-2xl font-semibold mb-4">Seu Nome</h2>
               <p className="text-muted-foreground mb-6">
-                Desenvolvedor Full Stack e Técnico em TI com experiência em IoT, automação e desenvolvimento backend. 
-                Especializado na criação de soluções inovadoras, como bots inteligentes, sistemas embarcados e aplicações web escaláveis
-                aliando funcionalidade a um design minimalista e atraente para o usuário.
+              Desenvolvedor Full Stack e Técnico em TI com experiência em IoT, automação e desenvolvimento backend. 
+              Especializado na criação de soluções inovadoras, como bots inteligentes, sistemas embarcados e aplicações web escaláveis
+              aliando funcionalidade a um design minimalista e atraente para o usuário.
               </p>
             </motion.div>
           </div>
           <div className="flex gap-4 justify-center">
-            <Link
-              to="/projects"
+            <a
+              href="#projects"
               className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground h-11 px-8 shadow hover:bg-primary/90"
             >
               Ver Projetos
-            </Link>
+            </a>
           </div>
         </motion.div>
       </div>
