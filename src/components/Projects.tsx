@@ -5,30 +5,32 @@ import { FaPython, FaCuttlefish, FaDatabase, FaMicrochip, FaCodeBranch, FaDiscor
 import { SiFastapi, SiCplusplus, SiArduino, SiMysql, SiFlask } from "react-icons/si";
 
 const projects = [
- 
   {
     title: "API de QR Code para Doação",
     description: "Sistema para gerar QR Codes personalizados para doações",
     tech: [FaPython, SiFlask],
-    details: "Gera QR Codes para para facilitar e fornecer uma maneira simples e flexível de criar QR Codes personalizados para decoração.",
+    details: "Gera QR Codes para facilitar e fornecer uma maneira simples e flexível de criar QR Codes personalizados para decoração.",
     link: "https://looveqr.vercel.app/",
-    github: "https://github.com/ualcz/lovecode"
+    github: "#",
+    image: "https://raw.githubusercontent.com/ualcz/heartcode-generator/refs/heads/main/public/img/image.png?token=GHSAT0AAAAAAC54UQDJFBGM454DGARCSBWSZ52FH7A"
   },
   {
     title: "Gênios com Arduino",
-    description: "sistema embarcado baseado no clássico jogo Genius.",
+    description: "Sistema embarcado baseado no clássico jogo Genius.",
     tech: [FaCuttlefish, SiArduino, FaMicrochip, FaCodeBranch],
     details: "Gera sequências aleatórias de cores e sons, registrando a interação do jogador para validação e aumento progressivo da dificuldade.",
     link: "#",
-    github: "https://github.com/ualcz/Memoria_Arduino"
+    github: "https://github.com/ualcz/Memoria_Arduino",
+    image: "https://raw.githubusercontent.com/ualcz/Memoria_Arduino/refs/heads/main/Imagem/jogo.png"
   },
   {
     title: "Bot de Discord Personalizado para Comunidade",
     description: "Desenvolvimento de bot para automação para gera calls personalizada",
     tech: [FaPython, FaDiscord],
-    details: "Bot do Discord que permite aos administradores gerenciar canais de voz personalizados dentro de um servidor. Os administradores podem adicionar, listar e remover canais de voz personalizados de maneira fácil e intuitiva.",
+    details: "Bot do Discord que permite aos administradores gerenciar canais de voz personalizados dentro de um servidor.",
     link: "#",
-    github: "https://github.com/ualcz/Voice_bot"
+    github: "https://github.com/ualcz/Voice_bot",
+    image: "URL_DA_IMAGEM_3"
   }
 ];
 
@@ -38,10 +40,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-16 bg-accent/5">
-      <div className="container px-4 mx-auto  py-16">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Trabalhos</h2>
-        </div>
+      <div className="container px-4 mx-auto py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {visibleProjects.map((project, index) => (
             <motion.div
@@ -51,6 +50,7 @@ const Projects = () => {
               transition={{ delay: index * 0.2 }}
             >
               <Card className="h-full hover:shadow-lg transition-shadow">
+                <img src={project.image} alt={project.title} className="w-full h-40 object-cover rounded-t-lg" />
                 <CardHeader>
                   <CardTitle>{project.title}</CardTitle>
                   <CardDescription>{project.description}</CardDescription>

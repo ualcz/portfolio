@@ -1,10 +1,8 @@
-
 import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-accent/5 py-16 bg-background">
-
       <div className="container px-4 py-16 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,7 +19,7 @@ const Hero = () => {
             >
               <img
                 src="logo.png"
-                alt="Profile"
+                alt="Perfil"
                 className="w-full h-full object-cover"
               />
             </motion.div>
@@ -33,9 +31,7 @@ const Hero = () => {
             >
               <h2 className="text-2xl font-semibold mb-4">Seu Nome</h2>
               <p className="text-muted-foreground mb-6">
-              Desenvolvedor Full Stack e Técnico em TI com experiência em IoT, automação e desenvolvimento backend. 
-              Especializado na criação de soluções inovadoras, como bots inteligentes, sistemas embarcados e aplicações web escaláveis
-              aliando funcionalidade a um design minimalista e atraente para o usuário.
+                Sou um Desenvolvedor Full Stack e Técnico em TI apaixonado por tecnologia e inovação. Tenho experiência em IoT, automação e desenvolvimento backend, criando soluções inteligentes e eficientes. Meu foco está na construção de aplicações web escaláveis, bots automatizados e sistemas embarcados, sempre aliando funcionalidade a um design minimalista e intuitivo.
               </p>
             </motion.div>
           </div>
