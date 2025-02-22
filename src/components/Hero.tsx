@@ -27,29 +27,7 @@ const socialLinks = [
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-accent/5">
-      {/* Social Links Bar */}
-      <div className="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-sm z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex justify-end gap-6">
-            {socialLinks.map((link) => {
-              const Icon = link.icon;
-              return (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                  aria-label={link.label}
-                >
-                  <Icon className="w-5 h-5" />
-                </a>
-              );
-            })}
-          </div>
-        </div>
-      </div>
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-accent/5 py-16 bg-background">
 
       <div className="container px-4 py-16 mx-auto">
         <motion.div
@@ -96,20 +74,6 @@ const Hero = () => {
             Especializado em arquitetar e desenvolver soluções backend escaláveis,
             seguras e de alta performance
           </p>
-          <div className="flex gap-4 justify-center">
-            <Link
-              to="/projects"
-              className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground h-11 px-8 shadow hover:bg-primary/90"
-            >
-              Ver Projetos
-            </Link>
-            <Link
-              to="/skills"
-              className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background h-11 px-8 shadow-sm hover:bg-accent hover:text-accent-foreground"
-            >
-              Minhas Skills
-            </Link>
-          </div>
         </motion.div>
       </div>
     </section>
