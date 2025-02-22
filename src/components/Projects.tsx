@@ -12,7 +12,7 @@ const projects = [
     details: "Gera QR Codes para facilitar e fornecer uma maneira simples e flexível de criar QR Codes personalizados para decoração.",
     link: "https://looveqr.vercel.app/",
     github: "#",
-    image: "https://raw.githubusercontent.com/ualcz/heartcode-generator/refs/heads/main/public/img/image.png?token=GHSAT0AAAAAAC54UQDJFBGM454DGARCSBWSZ52FH7A"
+    image: "img/love.png"
   },
   {
     title: "Gênios com Arduino",
@@ -30,7 +30,7 @@ const projects = [
     details: "Bot do Discord que permite aos administradores gerenciar canais de voz personalizados dentro de um servidor.",
     link: "#",
     github: "https://github.com/ualcz/Voice_bot",
-    image: "https://raw.githubusercontent.com/ualcz/Voice_bot/refs/heads/main/img/image.png"
+    image: "img/ds.png"
   }
 ];
 
