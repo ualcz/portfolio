@@ -1,6 +1,6 @@
+
 import { motion } from "framer-motion";
 import { FaGithub, FaInstagram, FaDiscord, FaEnvelope } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const socialLinks = [
   {
@@ -24,6 +24,7 @@ const socialLinks = [
     label: "Email",
   },
 ];
+
 
 const Hero = () => {
   return (
@@ -55,10 +56,11 @@ const Hero = () => {
               transition={{ delay: 0.3 }}
               className="max-w-2xl text-center"
             >
-              <h2 className="text-2xl font-semibold mb-4">Claudeilson Souza</h2>
+              <h2 className="text-2xl font-semibold mb-4">Seu Nome</h2>
               <p className="text-muted-foreground mb-6">
-                Desenvolvedor Full Stack e Técnico em TI com experiência em IoT, automação e desenvolvimento backend. 
-                Especializado na criação de soluções inovadoras, como bots inteligentes, sistemas embarcados e aplicações web escaláveis.
+              Desenvolvedor Full Stack e Técnico em TI com experiência em IoT, automação e desenvolvimento backend. 
+              Especializado na criação de soluções inovadoras, como bots inteligentes, sistemas embarcados e aplicações web escaláveis
+              aliando funcionalidade a um design minimalista e atraente para o usuário.
               </p>
             </motion.div>
           </div>
