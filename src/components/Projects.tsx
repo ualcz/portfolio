@@ -30,7 +30,7 @@ const projects = [
     details: "Bot do Discord que permite aos administradores gerenciar canais de voz personalizados dentro de um servidor.",
     link: "#",
     github: "https://github.com/ualcz/Voice_bot",
-    image: "URL_DA_IMAGEM_3"
+    image: "https://raw.githubusercontent.com/ualcz/Voice_bot/refs/heads/main/img/image.png"
   }
 ];
 
