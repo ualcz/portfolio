@@ -27,7 +27,7 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer className="py-16 bg-accent/5">
+    <footer className="bg-accent/5">
       <div className="container px-4 mx-auto">
         <div className="flex flex-col items-center gap-6">
           <div className="flex gap-6">

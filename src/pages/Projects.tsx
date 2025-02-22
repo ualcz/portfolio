@@ -1,14 +1,14 @@
 
-import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 
-const Home = () => {
+const Projectspage = () => {
   return (
     <main className="bg-background min-h-screen">
-      <Hero />
+      <Projects />
       <Footer />
     </main>
   );
 };
 
-export default Home;
+export default Projectspage;

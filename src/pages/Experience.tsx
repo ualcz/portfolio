@@ -1,14 +1,15 @@
 
-import Hero from "@/components/Hero";
+import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 
-const Home = () => {
+const ExperiencePage = () => {
   return (
     <main className="bg-background min-h-screen">
-      <Hero />
+      <Experience />
       <Footer />
+      
     </main>
   );
 };
 
-export default Home;
+export default ExperiencePage;

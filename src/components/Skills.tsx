@@ -1,20 +1,42 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { SiNodedotjs, SiPython, SiCplusplus, SiMysql, SiGit, SiPhp, SiReact, SiArduino, SiFlask } from "react-icons/si";
+import { 
+  SiNodedotjs, SiPython, SiCplusplus, SiMysql, SiGit, SiPhp, 
+  SiReact, SiArduino, SiFlask, SiTypescript, SiJavascript, 
+  SiMongodb, SiPostgresql, SiDjango, SiLinux,SiVite
+} from "react-icons/si";
 
 const allSkills = [
+  // Backend
   { name: "Node.js", icon: SiNodedotjs, category: "Backend" },
+  { name: "Flask", icon: SiFlask, category: "Backend" },
+  { name: "Django", icon: SiDjango, category: "Backend" },
+ 
+  
+  // Frontend
+  { name: "React", icon: SiReact, category: "Frontend" },
+  { name: "Vite", icon: SiVite, category: "Frontend" },
+  
+  // Linguagens de Programação
   { name: "Python", icon: SiPython, category: "Linguagens" },
   { name: "C++", icon: SiCplusplus, category: "Linguagens" },
+  { name: "JavaScript", icon: SiJavascript, category: "Linguagens" },
+  { name: "TypeScript", icon: SiTypescript, category: "Linguagens" },
+  { name: "PHP", icon: SiPhp, category: "Linguagens" },
+
+  // Banco de Dados
   { name: "SQL", icon: SiMysql, category: "Banco de Dados" },
+  { name: "PostgreSQL", icon: SiPostgresql, category: "Banco de Dados" },
+  { name: "MongoDB", icon: SiMongodb, category: "Banco de Dados" },
+
+  // Ferramentas e DevOps
   { name: "Git", icon: SiGit, category: "Ferramentas" },
-  { name: "PHP", icon: SiPhp, category: "Backend" },
-  { name: "React", icon: SiReact, category: "Frontend" },
-  { name: "Arduino", icon: SiArduino, category: "Linguagens" },
-  { name: "Flask", icon: SiFlask, category: "Backend" },
+  { name: "Linux", icon: SiLinux, category: "Ferramentas" },
+  { name: "Arduino", icon: SiArduino, category: "Ferramentas" },
 ];
 
-const categories = ["Todos", "Backend", "Frontend", "Banco de Dados", "Ferramentas", "Linguagens"];
+
+const categories = [ "Todos","Backend", "Frontend", "Banco de Dados", "Ferramentas", "Linguagens"];
 
 const Skills = () => {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
@@ -24,11 +46,8 @@ const Skills = () => {
 
   return (
     <section id="skills" className="py-16 bg-background">
-      <div className="container px-4 mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">Expertise Técnica</h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-          Escolha uma categoria para ver as tecnologias que utilizo no desenvolvimento.
-        </p>
+      <div className="container px-4 mx-auto text-center py-16">
+        <h2 className="text-3xl font-bold mb-6">Skills Técnica</h2>
 
         {/* Botões de Filtro */}
         <div className="flex justify-center gap-4 flex-wrap mb-8">

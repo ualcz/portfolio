@@ -1,14 +1,14 @@
 
-import Hero from "@/components/Hero";
+import Skills from "@/components/Skills";
 import Footer from "@/components/Footer";
 
-const Home = () => {
+const Skillspage = () => {
   return (
     <main className="bg-background min-h-screen">
-      <Hero />
+      <Skills />
       <Footer />
     </main>
   );
 };
 
-export default Home;
+export default Skillspage;

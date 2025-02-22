@@ -38,9 +38,9 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-16 bg-accent/5">
-      <div className="container px-4 mx-auto">
+      <div className="container px-4 mx-auto  py-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Principais Trabalhos</h2>
+          <h2 className="text-3xl font-bold mb-4">Trabalhos</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {visibleProjects.map((project, index) => (

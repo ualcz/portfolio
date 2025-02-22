@@ -32,8 +32,8 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-16 bg-background">
-      <div className="container px-4 mx-auto">
+    <section id="experience" className="py-16 bg-background py-16">
+      <div className="container px-4 mx-auto  py-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Trajetória Profissional</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
