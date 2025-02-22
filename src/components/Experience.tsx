@@ -10,9 +10,9 @@ const experiences = [
   },
   {
     period: "2024 - Presente",
-    role: "Desenvolvedor de Aplicativos Educacionais",
+    role: "Desenvolvedor de Api",
     company: "Projeto Independente",
-    description: "Pesquisa e desenvolvimento de um aplicativo gamificado para conscientização ambiental e impactos da mineração na Chapada Diamantina."
+    description: "Pesquisa e desenvolvimento de um api para catalogar plantas medicinal."
   },
   {
     period: "2022 - 2024",
