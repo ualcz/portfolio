@@ -4,7 +4,7 @@ import TechBackground from "./TechBackground";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-accent/5 relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b py-16 from-background to-accent/5 relative overflow-hidden">
       <TechBackground />
       
       <div className="container px-4 py-16 mx-auto">
