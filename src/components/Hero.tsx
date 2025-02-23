@@ -16,6 +16,16 @@ const Hero = () => {
           className="text-center relative z-10"
         >
           <div className="flex flex-col items-center mb-8">
+            {/* Banner Background */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 rounded-2xl overflow-hidden -translate-y-24">
+              <img
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1600&q=80"
+                alt="Banner"
+                className="w-full h-full object-cover opacity-50"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
+            </div>
+
             {/* Tech Icons */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-12 flex gap-8">
               <motion.div
