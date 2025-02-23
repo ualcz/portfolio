@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { FaPython, FaCuttlefish, FaDatabase, FaMicrochip, FaCodeBranch, FaDiscord, FaRocket, FaGithub } from "react-icons/fa";
-import { SiFastapi, SiCplusplus, SiArduino, SiMysql, SiFlask } from "react-icons/si";
+import { SiPostgresql, SiArduino, SiMysql, SiFlask } from "react-icons/si";
 
 const projects = [
   {
@@ -26,7 +26,7 @@ const projects = [
   {
     title: "PlasntasDB",
     description: "Api com infomação sobre divesas plantas.",
-    tech: [FaPython, SiFlask,FaDatabase],
+    tech: [FaPython, SiFlask,FaDatabase,SiPostgresql],
     details: "Fornece informações detalhadas sobre diversas espécies, incluindo dificuldade de cultivo e se são seguras para animais de estimação.",
     link: "https://plantsdb.vercel.app/",
     github: "#",
