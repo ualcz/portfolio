@@ -1,7 +1,6 @@
 
 import { motion } from "framer-motion";
 import TechBackground from "./TechBackground";
-import { Terminal, Code2, Cpu, Database } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -25,43 +24,7 @@ const Hero = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
             </div>
-
-            {/* Tech Icons */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-12 flex gap-8">
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.2 }}
-                className="p-3 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50"
-              >
-                <Terminal className="w-6 h-6 text-primary" />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.4 }}
-                className="p-3 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50"
-              >
-                <Code2 className="w-6 h-6 text-primary" />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.6 }}
-                className="p-3 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50"
-              >
-                <Cpu className="w-6 h-6 text-primary" />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.8 }}
-                className="p-3 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50"
-              >
-                <Database className="w-6 h-6 text-primary" />
-              </motion.div>
-            </div>
-
+            
             <motion.div
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
