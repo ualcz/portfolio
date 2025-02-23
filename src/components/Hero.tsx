@@ -1,11 +1,22 @@
 
 import { motion } from "framer-motion";
 import TechBackground from "./TechBackground";
+import { Terminal, Code2, Cpu, Database } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-accent/5 relative overflow-hidden">
+    <section className="min-h-screen pt-20 flex items-center justify-center bg-gradient-to-b from-background to-accent/5 relative overflow-hidden">
       <TechBackground />
+      
+      {/* Full-width Banner */}
+      <div className="absolute top-0 left-0 right-0 h-96 overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1600&q=80"
+          alt="Banner"
+          className="w-full h-full object-cover opacity-50"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/60 to-background" />
+      </div>
       
       <div className="container px-4 py-16 mx-auto">
         <motion.div
@@ -15,16 +26,42 @@ const Hero = () => {
           className="text-center relative z-10"
         >
           <div className="flex flex-col items-center mb-8">
-            {/* Banner Background */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 rounded-2xl overflow-hidden -translate-y-24">
-              <img
-                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1600&q=80"
-                alt="Banner"
-                className="w-full h-full object-cover opacity-50"
-              />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
+            {/* Tech Icons */}
+            <div className="flex gap-8 mb-8">
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.2 }}
+                className="p-3 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50"
+              >
+                <Terminal className="w-6 h-6 text-primary" />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.4 }}
+                className="p-3 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50"
+              >
+                <Code2 className="w-6 h-6 text-primary" />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.6 }}
+                className="p-3 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50"
+              >
+                <Cpu className="w-6 h-6 text-primary" />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.8 }}
+                className="p-3 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50"
+              >
+                <Database className="w-6 h-6 text-primary" />
+              </motion.div>
             </div>
-            
+
             <motion.div
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
