@@ -25,42 +25,9 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-center relative z-10"
         >
-          <div className="flex flex-col items-center mb-8">
+          <div className="flex flex-col items-center py-16 mb-8">
             {/* Tech Icons */}
-            <div className="flex gap-8 mb-8">
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.2 }}
-                className="p-3 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50"
-              >
-                <Terminal className="w-6 h-6 text-primary" />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.4 }}
-                className="p-3 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50"
-              >
-                <Code2 className="w-6 h-6 text-primary" />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.6 }}
-                className="p-3 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50"
-              >
-                <Cpu className="w-6 h-6 text-primary" />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.8 }}
-                className="p-3 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50"
-              >
-                <Database className="w-6 h-6 text-primary" />
-              </motion.div>
-            </div>
+           
 
             <motion.div
               initial={{ scale: 0.5, opacity: 0 }}
