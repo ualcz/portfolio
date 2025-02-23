@@ -15,6 +15,24 @@ const projects = [
     image: "img/love.png"
   },
   {
+    title: "Bot de Discord Personalizado para Comunidade",
+    description: "Desenvolvimento de bot para automação para gera calls personalizada",
+    tech: [FaPython, FaDiscord],
+    details: "Bot do Discord que permite aos administradores gerenciar canais de voz personalizados dentro de um servidor.",
+    link: "#",
+    github: "https://github.com/ualcz/Voice_bot",
+    image: "img/ds.png"
+  }, 
+  {
+    title: "PlasntasDB",
+    description: "Api com infomação sobre divesas plantas.",
+    tech: [FaPython, SiFlask,FaDatabase],
+    details: "Fornece informações detalhadas sobre diversas espécies, incluindo dificuldade de cultivo e se são seguras para animais de estimação.",
+    link: "https://plantsdb.vercel.app/",
+    github: "#",
+    image: "img/plant.png"
+  },
+  {
     title: "Gênios com Arduino",
     description: "Sistema embarcado baseado no clássico jogo Genius.",
     tech: [FaCuttlefish, SiArduino, FaMicrochip, FaCodeBranch],
@@ -23,15 +41,6 @@ const projects = [
     github: "https://github.com/ualcz/Memoria_Arduino",
     image: "https://raw.githubusercontent.com/ualcz/Memoria_Arduino/refs/heads/main/Imagem/jogo.png"
   },
-  {
-    title: "Bot de Discord Personalizado para Comunidade",
-    description: "Desenvolvimento de bot para automação para gera calls personalizada",
-    tech: [FaPython, FaDiscord],
-    details: "Bot do Discord que permite aos administradores gerenciar canais de voz personalizados dentro de um servidor.",
-    link: "#",
-    github: "https://github.com/ualcz/Voice_bot",
-    image: "img/ds.png"
-  }
 ];
 
 const Projects = () => {
