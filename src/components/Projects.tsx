@@ -2,18 +2,18 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { FaPython, FaCuttlefish, FaDatabase, FaMicrochip, FaCodeBranch, FaDiscord, FaRocket, FaGithub } from "react-icons/fa";
-import { SiPostgresql, SiArduino, SiMysql, SiFlask } from "react-icons/si";
+import { SiPostgresql, SiArduino, SiMysql, SiFlask ,SiReact,SiTypescript} from "react-icons/si";
 
 const projects = [
   {
-    title: "API de QR Code para Doação",
-    description: "Sistema para gerar QR Codes personalizados para doações",
-    tech: [FaPython, SiFlask],
-    details: "Gera QR Codes para facilitar e fornecer uma maneira simples e flexível de criar QR Codes personalizados para decoração.",
-    link: "https://looveqr.vercel.app/",
+    title: "Tempogram - Jogo de Anagramas",
+    description: "Um jogo desafiador de anagramas com limite de tempo!",
+    tech: [SiReact, SiTypescript,SiMysql],
+    details: "Tempogram é um jogo em que você precisa formar palavras a partir de letras embaralhadas antes que o tempo acabe. Teste sua agilidade mental e vocabulário!",
+    link: "https://tempogramma.vercel.app/",
     github: "#",
-    image: "img/love.png"
-  },
+    image: "img/tempo.png"
+},
   {
     title: "Bot de Discord Personalizado para Comunidade",
     description: "Desenvolvimento de bot para automação para gera calls personalizada",
@@ -41,6 +41,15 @@ const projects = [
     github: "https://github.com/ualcz/Memoria_Arduino",
     image: "https://raw.githubusercontent.com/ualcz/Memoria_Arduino/refs/heads/main/Imagem/jogo.png"
   },
+  {
+    title: "API de QR Code para Doação",
+    description: "Sistema para gerar QR Codes personalizados para doações",
+    tech: [FaPython, SiFlask],
+    details: "Gera QR Codes para facilitar e fornecer uma maneira simples e flexível de criar QR Codes personalizados para decoração.",
+    link: "https://looveqr.vercel.app/",
+    github: "#",
+    image: "img/love.png"
+  }
 ];
 
 const Projects = () => {
