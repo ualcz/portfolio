@@ -41,15 +41,6 @@ const projects = [
     github: "https://github.com/ualcz/Memoria_Arduino",
     image: "https://raw.githubusercontent.com/ualcz/Memoria_Arduino/refs/heads/main/Imagem/jogo.png"
   },
-  {
-    title: "API de QR Code para Doação",
-    description: "Sistema para gerar QR Codes personalizados para doações",
-    tech: [FaPython, SiFlask],
-    details: "Gera QR Codes para facilitar e fornecer uma maneira simples e flexível de criar QR Codes personalizados para decoração.",
-    link: "https://looveqr.vercel.app/",
-    github: "#",
-    image: "img/love.png"
-  }
 ];
 
 const Projects = () => {
