@@ -28,8 +28,8 @@ const projects = [
     description: "Api com infomação sobre divesas plantas.",
     tech: [FaPython, SiFlask,FaDatabase,SiPostgresql],
     details: "Fornece informações detalhadas sobre diversas espécies, incluindo dificuldade de cultivo e se são seguras para animais de estimação.",
-    link: "https://plantsdb.vercel.app/",
-    github: "#",
+    link: "#",
+    github: "https://github.com/ualcz/plantsdb",
     image: "img/plant.png"
   },
   {
