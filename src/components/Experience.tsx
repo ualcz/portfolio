@@ -6,13 +6,7 @@ const experiences = [
     period: "2024 - Presente",
     role: "Freelance",
     company: "Projetos Independentes",
-    description: "Desenvolvimento de soluções personalizadas, incluindo bots para gerenciamento de comunidades e automação de processos."
-  },
-  {
-    period: "2024 - Presente",
-    role: "Desenvolvedor de Api",
-    company: "Projeto Independente",
-    description: "Pesquisa e desenvolvimento de um api para catalogar plantas medicinal."
+    description: "Desenvolvimento de soluções personalizadas, incluindo bots para gerenciamento de comunidades e automação de processos. Desenvolvimento de APIs com Flask para aplicações e criação de landing page"
   },
   {
     period: "2022 - 2024",

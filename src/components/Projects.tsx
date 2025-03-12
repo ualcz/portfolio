@@ -11,7 +11,7 @@ const projects = [
     tech: [SiReact, SiTypescript,SiMysql],
     details: "Tempogram é um jogo em que você precisa formar palavras a partir de letras embaralhadas antes que o tempo acabe. Teste sua agilidade mental e vocabulário!",
     link: "https://tempogramma.vercel.app/",
-    github: "#",
+    github: "https://github.com/ualcz/tempogramma",
     image: "img/tempo.png"
 },
   {
