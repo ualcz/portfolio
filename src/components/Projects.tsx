@@ -1,10 +1,19 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { FaPython, FaCuttlefish, FaDatabase, FaMicrochip, FaCodeBranch, FaDiscord, FaRocket, FaGithub } from "react-icons/fa";
+import { FaPython, FaCuttlefish, FaDatabase, FaMicrochip, FaCodeBranch, FaDiscord, FaRocket, FaGithub, FaReact, FaNodeJs} from "react-icons/fa";
 import { SiPostgresql, SiArduino, SiMysql, SiFlask ,SiReact,SiTypescript} from "react-icons/si";
 
 const projects = [
+  {
+    title: "CodLab",
+    description: "Plataforma educacional.",
+    tech: [FaDatabase, FaReact, FaNodeJs],
+    details: "Paltaforma educacional para emsinar progamação em bloco.",
+    link: "https://codelab-adventure.vercel.app",
+    github: "#",
+    image: "img/lab.png"	
+  },
   {
     title: "Tempogram - Jogo de Anagramas",
     description: "Um jogo desafiador de anagramas com limite de tempo!",
@@ -41,6 +50,7 @@ const projects = [
     github: "https://github.com/ualcz/Memoria_Arduino",
     image: "https://raw.githubusercontent.com/ualcz/Memoria_Arduino/refs/heads/main/Imagem/jogo.png"
   },
+  
 ];
 
 const Projects = () => {

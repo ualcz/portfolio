@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { FaGithub, FaInstagram, FaDiscord, FaEnvelope } from "react-icons/fa";
 
 const socialLinks = [
