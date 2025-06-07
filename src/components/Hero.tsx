@@ -51,11 +51,10 @@ const Hero = () => {
               className="max-w-2xl text-center relative"
             >
               <div className="absolute -inset-1 bg-gradient-to-r from-primary/0 via-primary/5 to-primary/0 blur" />
-              <h2 className="text-2xl font-semibold mb-4 relative">Seu Nome</h2>
+              <h2 className="text-2xl font-semibold mb-4 relative">Claudeilson Souza</h2>
               <p className="text-muted-foreground mb-6 relative">
   Desenvolvedor Full Stack com experiência prática em React, Vite e TypeScript, focado na construção de interfaces web responsivas, acessíveis e com boa usabilidade. Atuação em projetos front-end, back-end e mobile, utilizando React Native para desenvolvimento multiplataforma.<br /><br />
-  Experiência com Java (Spring Boot) e Python (FastAPI e Django) no desenvolvimento de APIs RESTful robustas e escaláveis. Conhecimento em arquitetura de microsserviços, autenticação JWT, PostgreSQL e integração entre sistemas.<br /><br />
-  Familiaridade com Docker, boas práticas de CI/CD, versionamento com Git e colaboração em ambientes ágeis.
+  Experiência com Java (Spring Boot) e Python (FastAPI e Django) no desenvolvimento de APIs RESTful robustas e escaláveis. Conhecimento em arquitetura de microsserviços, autenticação JWT, PostgreSQL e integração entre sistemas.Familiaridade com Docker, boas práticas de CI/CD, versionamento com Git e colaboração em ambientes ágeis.
 </p>
 
             </motion.div>
