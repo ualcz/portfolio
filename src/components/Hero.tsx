@@ -1,11 +1,9 @@
 
 import { motion } from "framer-motion";
 import TechBackground from "./TechBackground";
-import { Terminal, Code2, Cpu, Database } from "lucide-react";
-
 const Hero = () => {
   return (
-    <section className="min-h-screen pt-20 flex items-center justify-center bg-gradient-to-b from-background to-accent/5 relative overflow-hidden">
+    <section id="home" className="min-h-screen pt-20 flex items-center justify-center bg-gradient-to-b from-background to-accent/5 relative overflow-hidden">
       <TechBackground />
       
       {/* Full-width Banner */}
@@ -55,11 +53,11 @@ const Hero = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-primary/0 via-primary/5 to-primary/0 blur" />
               <h2 className="text-2xl font-semibold mb-4 relative">Seu Nome</h2>
               <p className="text-muted-foreground mb-6 relative">
-                Sou um Desenvolvedor Full Stack e Técnico em TI apaixonado por tecnologia e inovação. 
-                Tenho experiência em IoT, automação e desenvolvimento backend, criando soluções inteligentes 
-                e eficientes. Meu foco está na construção de aplicações web escaláveis, bots automatizados 
-                e sistemas embarcados, sempre aliando funcionalidade a um design minimalista e intuitivo.
-              </p>
+  Desenvolvedor Full Stack com experiência prática em React, Vite e TypeScript, focado na construção de interfaces web responsivas, acessíveis e com boa usabilidade. Atuação em projetos front-end, back-end e mobile, utilizando React Native para desenvolvimento multiplataforma.<br /><br />
+  Experiência com Java (Spring Boot) e Python (FastAPI e Django) no desenvolvimento de APIs RESTful robustas e escaláveis. Conhecimento em arquitetura de microsserviços, autenticação JWT, PostgreSQL e integração entre sistemas.<br /><br />
+  Familiaridade com Docker, boas práticas de CI/CD, versionamento com Git e colaboração em ambientes ágeis.
+</p>
+
             </motion.div>
           </div>
         </motion.div>

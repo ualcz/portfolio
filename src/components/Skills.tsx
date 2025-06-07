@@ -1,48 +1,48 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { 
-  SiNodedotjs, SiPython, SiCplusplus, SiMysql, SiGit, SiPhp, 
-  SiReact, SiArduino, SiFlask, SiTypescript, SiJavascript, 
+  SiNodedotjs, SiPython, SiMysql, SiGit,
+  SiReact, SiDocker, SiFastapi, SiTypescript, SiSpringboot, 
   SiMongodb, SiPostgresql, SiDjango, SiLinux,SiVite
-} from "react-icons/si";
+} from "react-icons/si"
+import { FaJava } from "react-icons/fa";
 
 const allSkills = [
   // Backend
-  { name: "Node.js", icon: SiNodedotjs, category: "Backend" },
-  { name: "Flask", icon: SiFlask, category: "Backend" },
   { name: "Django", icon: SiDjango, category: "Backend" },
- 
-  
+  { name: "Fastapi", icon: SiFastapi, category: "Backend" },
+  { name: "Node.js", icon: SiNodedotjs, category: "Backend" },
+  { name: "Springboot", icon: SiSpringboot, category: "Backend" },
+
   // Frontend
   { name: "React", icon: SiReact, category: "Frontend" },
   { name: "Vite", icon: SiVite, category: "Frontend" },
-  
+
   // Linguagens de Programação
   { name: "Python", icon: SiPython, category: "Linguagens" },
-  { name: "C++", icon: SiCplusplus, category: "Linguagens" },
-  { name: "JavaScript", icon: SiJavascript, category: "Linguagens" },
   { name: "TypeScript", icon: SiTypescript, category: "Linguagens" },
-  { name: "PHP", icon: SiPhp, category: "Linguagens" },
+  { name: "Java", icon: FaJava, category: "Linguagens"},
 
   // Banco de Dados
-  { name: "SQL", icon: SiMysql, category: "Banco de Dados" },
-  { name: "PostgreSQL", icon: SiPostgresql, category: "Banco de Dados" },
   { name: "MongoDB", icon: SiMongodb, category: "Banco de Dados" },
+  { name: "PostgreSQL", icon: SiPostgresql, category: "Banco de Dados" },
+  { name: "SQL", icon: SiMysql, category: "Banco de Dados" },
 
   // Ferramentas e DevOps
+  { name: "Docker", icon: SiDocker, category: "Ferramentas" },
   { name: "Git", icon: SiGit, category: "Ferramentas" },
   { name: "Linux", icon: SiLinux, category: "Ferramentas" },
-  { name: "Arduino", icon: SiArduino, category: "Ferramentas" },
 ];
 
 
-const categories = [ "Todos","Backend", "Frontend", "Banco de Dados", "Ferramentas", "Linguagens"];
+
+const categories = [ "Backend", "Frontend", "Banco de Dados", "Ferramentas", "Linguagens"];
 
 const Skills = () => {
-  const [selectedCategory, setSelectedCategory] = useState("Todos");
+  const [selectedCategory, setSelectedCategory] = useState("Backend");
 
   // Filtra as skills com base na categoria selecionada
-  const filteredSkills = selectedCategory === "Todos" ? allSkills : allSkills.filter(skill => skill.category === selectedCategory);
+  const filteredSkills = allSkills.filter(skill => skill.category === selectedCategory);
 
   return (
     <section id="skills" className="py-16 bg-background">

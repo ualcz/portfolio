@@ -7,9 +7,6 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
-import SkillsPage from "./pages/Skills";
-import ProjectsPage from "./pages/Projects";
-import ExperiencePage from "./pages/Experience";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,9 +21,6 @@ const App = () => (
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/skills" element={<SkillsPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/experience" element={<ExperiencePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </HashRouter>
