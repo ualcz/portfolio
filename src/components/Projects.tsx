@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { FaPython, FaCuttlefish, FaDatabase, FaMicrochip, FaCodeBranch, FaDiscord, FaRocket, FaGithub, FaReact, FaNodeJs} from "react-icons/fa";
-import { SiPostgresql, SiArduino, SiMysql, SiFlask ,SiReact,SiTypescript} from "react-icons/si";
+import { FaPython, FaCuttlefish, FaDatabase, FaMicrochip, FaCodeBranch, FaRocket, FaGithub, FaReact, FaNodeJs, FaJava} from "react-icons/fa";
+import { SiPostgresql, SiArduino, SiMysql, SiFlask , SiFastapi} from "react-icons/si";
 
 const projects = [
   {
@@ -15,23 +15,31 @@ const projects = [
     image: "img/lab.png"	
   },
   {
-    title: "Tempogram - Jogo de Anagramas",
-    description: "Um jogo desafiador de anagramas com limite de tempo!",
-    tech: [SiReact, SiTypescript,SiMysql],
-    details: "Tempogram é um jogo em que você precisa formar palavras a partir de letras embaralhadas antes que o tempo acabe. Teste sua agilidade mental e vocabulário!",
-    link: "https://tempogramma.vercel.app/",
-    github: "https://github.com/ualcz/tempogramma",
-    image: "img/tempo.png"
-},
-  {
-    title: "Bot de Discord Personalizado para Comunidade",
-    description: "Desenvolvimento de bot para automação para gera calls personalizada",
-    tech: [FaPython, FaDiscord],
-    details: "Bot do Discord que permite aos administradores gerenciar canais de voz personalizados dentro de um servidor.",
+    title: "CertifyAPI",
+    description: "CertifyAPI é uma API RESTful para gerenciamento de certificados digitais, construída com FastAPI e PostgreSQL.",
+    tech: [FaPython, SiFastapi, FaDatabase, SiPostgresql],
+    details: "Permite criar, validar e gerenciar certificados digitais, oferecendo endpoints para emissão, revogação e consulta de certificados, além de autenticação JWT para segurança.",
     link: "#",
-    github: "https://github.com/ualcz/Voice_bot",
-    image: "img/ds.png"
-  }, 
+    github: "https://github.com/ualcz/certifyapi"
+  },
+  {
+    title: "FloraFolio",
+    description: "Api para gerenciar floricuta feita em Spring Boot.",
+    tech: [FaJava, FaDatabase, SiMysql],
+    details: "Gerencia o estoque de flores, processa pedidos e fornece análises de vendas para otimizar a operação da floricultura.",
+    link: "#",
+    github: "https://github.com/ualcz/florafolio",
+    image: "img/flor.png"
+  },
+  {
+    title: "Bot Quem é Você?",
+    description: "Bot discor para jogar o clássico jogo 'Quem é Você?'",
+    tech: [FaPython, SiFlask],
+    details: "Implementação do jogo 'Quem é Você?' em Python usando a api do discord.",
+    link: "#",
+    github: "https://github.com/ualcz/QuemSou",
+    image: "img/bot.png"
+  },
   {
     title: "PlasntasDB",
     description: "Api com infomação sobre divesas plantas.",
@@ -49,6 +57,15 @@ const projects = [
     link: "#",
     github: "https://github.com/ualcz/Memoria_Arduino",
     image: "https://raw.githubusercontent.com/ualcz/Memoria_Arduino/refs/heads/main/Imagem/jogo.png"
+  },
+  {
+    title:'Portfólio Pessoal',
+   description:'Meu portfólio pessoal desenvolvido com React, Vite e TypeScript.',
+   tech: [FaReact, FaNodeJs],
+   details:'Apresenta meus projetos, habilidades e experiência profissional, destacando minha jornada como desenvolvedor full stack.',
+   link: "https://claubx.vercel.app/",
+   github: "https://github.com/ualcz/portfolio",
+   image: "img/port.png"
   },
   
 ];

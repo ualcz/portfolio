@@ -53,9 +53,13 @@ const Hero = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-primary/0 via-primary/5 to-primary/0 blur" />
               <h2 className="text-2xl font-semibold mb-4 relative">Claudeilson Souza</h2>
               <p className="text-muted-foreground mb-6 relative">
-  Desenvolvedor Full Stack com experiência prática em React, Vite e TypeScript, focado na construção de interfaces web responsivas, acessíveis e com boa usabilidade. Atuação em projetos front-end, back-end e mobile, utilizando React Native para desenvolvimento multiplataforma.<br /><br />
-  Experiência com Java (Spring Boot) e Python (FastAPI e Django) no desenvolvimento de APIs RESTful robustas e escaláveis. Conhecimento em arquitetura de microsserviços, autenticação JWT, PostgreSQL e integração entre sistemas.Familiaridade com Docker, boas práticas de CI/CD, versionamento com Git e colaboração em ambientes ágeis.
-</p>
+Desenvolvedor Full Stack com experiência em React, Vite e TypeScript, criando interfaces web responsivas e com boa usabilidade. Também atuo no desenvolvimento mobile com React Native.
+
+Tenho experiência com APIs REST usando Java (Spring Boot) e Python (FastAPI e Django), além de conhecimento em PostgreSQL, autenticação JWT e integração de sistemas.
+
+Possuo familiaridade com Docker, Git, CI/CD e metodologias ágeis.
+
+Sou estudante de Análise e Desenvolvimento de Sistemas pelo IFBA e técnico em Informática. Já trabalhei com suporte técnico, desenvolvimento de APIs e participei de projetos de robótica premiados.</p>
 
             </motion.div>
           </div>

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { FaGithub, FaInstagram, FaDiscord, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Home, Code, FolderGit2, Briefcase, Menu, X, Sun, Moon } from "lucide-react";
@@ -61,17 +60,13 @@ const Navigation = () => {
               <Home className="w-4 h-4" />
               <span>Home</span>
             </button>
-            <button 
-              onClick={() => scrollToSection('skills')} 
-              className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium hover:bg-accent/10 hover:text-primary transition-all"
-            >
-              <Code className="w-4 h-4" />
-              <span>Skills</span>
-            </button>
+
+
             <button 
               onClick={() => scrollToSection('projects')} 
               className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium hover:bg-accent/10 hover:text-primary transition-all"
             >
+    
               <FolderGit2 className="w-4 h-4" />
               <span>Projetos</span>
             </button>
