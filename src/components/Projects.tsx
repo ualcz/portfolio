@@ -21,7 +21,7 @@ const projects = [
     details: "Permite criar, validar e gerenciar certificados digitais, oferecendo endpoints para emissão, revogação e consulta de certificados, além de autenticação JWT para segurança.",
     link: "#",
     github: "https://github.com/ualcz/certifyapi",
-    image: "https://github.com/ualcz/CertifyAPI/blob/main/public/img.png?raw=true"
+    image: "img/cert.png"
   },
   {
     title: "FloraFolio",
