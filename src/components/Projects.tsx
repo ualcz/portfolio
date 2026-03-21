@@ -42,12 +42,12 @@ const projects = [
     image: "img/bot.png"
   },
   {
-    title: "PlasntasDB",
-    description: "Api com infomação sobre divesas plantas.",
+    title: "BioChapada API",
+    description: "Api com infomação sobre plantas nativas da Chapada.",
     tech: [FaPython, SiFlask,FaDatabase,SiPostgresql],
-    details: "Fornece informações detalhadas sobre diversas espécies, incluindo dificuldade de cultivo e se são seguras para animais de estimação.",
+    details: "Fornece informações detalhadas sobre diversas espécies nativas da Chapada diamantina, A API permite a busca, catalogação, identificação e contribuições colaborativas de espécies nativas, além de explorar o uso de dados reais e integração com bases científicas.",
     link: "#",
-    github: "https://github.com/ualcz/plantsdb",
+    github: "https://github.com/ualcz/BioChapada-Api",
     image: "img/plant.png"
   },
   {
