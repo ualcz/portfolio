@@ -9,7 +9,7 @@ const projects = [
     title: "CodLab",
     description: "Plataforma educacional.",
     tech: [FaDatabase, FaReact, FaNodeJs],
-    details: "Paltaforma educacional para emsinar progamação em bloco.",
+    details: "Plataforma educacional para ensinar programação em bloco.",
     link: "https://codelab-adventure.vercel.app",
     github: "#",
     image: "img/lab.png"	
